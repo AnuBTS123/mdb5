@@ -1,0 +1,237 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}">
+</head>
+<body>
+    <center>
+        <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button
+        data-mdb-collapse-init
+        class="navbar-toggler"
+        type="button"
+        data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Navbar brand -->
+        <a class="navbar-brand mt-2 mt-lg-0" href="#">
+          <img
+            src="{% static 'images/anu.jpg' %}"
+            height="15"
+            alt="MDB Logo"
+            loading="lazy"
+          />
+        </a>
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+  
+      <!-- Right elements -->
+      <div class="d-flex align-items-center">
+        <!-- Icon -->
+        <a class="text-reset me-3" href="#">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+  
+        <!-- Notifications -->
+        <div class="dropdown">
+          <a
+            data-mdb-dropdown-init
+            class="text-reset me-3 dropdown-toggle hidden-arrow"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            aria-expanded="false"
+          >
+            <i class="fas fa-bell"></i>
+            <span class="badge rounded-pill badge-notification bg-danger">1</span>
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="navbarDropdownMenuLink"
+          >
+            <li>
+              <a class="dropdown-item" href="#">Some news</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Another news</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Avatar -->
+        <div class="dropdown">
+          <a
+            data-mdb-dropdown-init
+            class="dropdown-toggle d-flex align-items-center hidden-arrow"
+            href="#"
+            id="navbarDropdownMenuAvatar"
+            role="button"
+            aria-expanded="false"
+          >
+            <img
+              src="{% static 'images/anu.jpg' %}"
+              class="rounded-circle"
+              height="25"
+              alt="Black and White Portrait of a Man"
+              loading="lazy"
+            />
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="navbarDropdownMenuAvatar"
+          >
+            <li>
+              <a class="dropdown-item" href="#">My profile</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Settings</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Right elements -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+
+  <center>
+
+    <h1 class="btn btn-success">mdb5</h1>
+
+    <!-- Carousel wrapper -->
+<div id="carouselBasicExample" class="carousel slide" data-mdb-ride="carousel" data-mdb-carousel-init>
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-mdb-target="#carouselBasicExample"
+        data-mdb-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-mdb-target="#carouselBasicExample"
+        data-mdb-slide-to="1"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-mdb-target="#carouselBasicExample"
+        data-mdb-slide-to="2"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 3"
+      ></button>
+    </div>
+  
+    <!-- Inner -->
+    <div class="carousel-inner">
+      <!-- Single item -->
+      <div class="carousel-item active">
+        <img src="{% static 'images/anu.jpg' %}" class="d-block w-50" alt="beautiful view"/>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide</h5>
+          <p>beautiful view</p>
+        </div>
+      </div>
+  
+      <!-- Single item -->
+      <div class="carousel-item active">
+        <img src="{% static 'images/shiva.jpg' %}" class="d-block w-50" alt="lord shiva"/>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide</h5>
+          <p>lord shiva</p>
+        </div>
+      </div>
+  
+      <!-- Single item -->
+      <div class="carousel-item active">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(23).webp" class="d-block w-50" alt="Cliff Above a Stormy Sea"/>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide</h5>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <!-- Inner -->
+  
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Carousel wrapper -->
+
+
+  <center>
+    <div class="card">
+        <img src="{% static 'images/dogs.jpg' %}" class="d-block w-50 h-30" class="card-img-top" alt="Fissure in Sandstone"/>
+        <div class="card-body">
+          <h5 class="card-title">Types of dog breeds</h5>
+          <p class="card-text">"A dog is the only thing on earth that loves you more than he loves himself". Dogs are just natural comedians. They are clumsy, messy, playful balls of joy wrapped up in fur and wiggly butts.</p>
+          <a href="#!" class="btn btn-primary" data-mdb-ripple-init>click here</a>
+        </div>
+      </div>
+  </center>
+
+
+    
+  </center>
+
+        
+
+
+
+
+
+
+        <script src="{% static 'js/jquery.js' %}"></script>
+        <script src="{% static 'js/popper.js' %}"></script>
+        <script src="{% static 'js/mdb.es.min.js' %}"></script>
+
+    </center>
+</body>
+</html>
